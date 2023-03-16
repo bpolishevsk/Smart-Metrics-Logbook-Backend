@@ -17,15 +17,7 @@ mongoose
   })
   .then(() => console.log("DB Connected"));
 
-// mongoose.createConnection(
-//   "mongodb+srv://kateryna:monster@1992@cluster0.ivsvnno.mongodb.net/metrics_book?retryWrites=true&w=majority",
-//   {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   }
-// );
-// app.use(bodyParser.json({ limit: '30mb', extended: true }))
-// app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
+
 
 //middlewares
 app.use(bodyParser.json());
