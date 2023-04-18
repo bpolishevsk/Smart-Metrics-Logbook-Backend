@@ -1,12 +1,10 @@
 const app = require("./config/express");
-const express = require("express");
 const mongoose = require("./config/mongoose");
-const path = require("path");
 
 require("dotenv").config();
 //middlewares
 
-const port = process.env.PRODUCTION_API_PORT;
+const port = process.env.PORT;
 
 mongoose.on("connected", () => {
   app.listen(port || 8000, () => {

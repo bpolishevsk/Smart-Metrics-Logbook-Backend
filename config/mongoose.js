@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
 mongoose
-  .connect(process.env.MONGODB_URI_PRODUCTION, {
+  .connect(process.env.PORT, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
